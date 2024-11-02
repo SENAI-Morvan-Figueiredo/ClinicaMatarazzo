@@ -1,0 +1,104 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #0073FF;
+    padding: 30px;
+    border-radius: 15px;
+    width: 550px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.form h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.form input, .form select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+}
+
+.input-group.small input {
+    width: 70px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #0000FF;
+    z-index: 0;
+}
+
+/* Tamanhos e posições dos círculos */
+.circle.large.left {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+}
+
+.circle.small.right {
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+.circle.large.bottom-right {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -100px;
+}
+
+/* Linha diagonal */
+.diagonal-line {
+    position: absolute;
+    width: 2px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 20px;
+    left: 50%;
+    transform: rotate(45deg);
+    z-index: 0;
+    opacity: 0.4;
+}
