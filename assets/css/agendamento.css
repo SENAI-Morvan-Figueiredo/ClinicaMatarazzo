@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c4c4c4;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #2c5da8;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon::before {
+    content: '👓';
+    font-size: 20px;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar select, .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.auth-buttons button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+main {
+    background-color: #f8f9fa;
+}
+
+.agendamento-container {
+    width: 1200px;
+    max-width: 90%;
+    height: 675px;
+}
+
+.calendar-wrapper {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+#calendar {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.horario-btn {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.horario-btn:hover {
+    background-color: #ccc;
+}
+
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.calendar {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.calendar-header {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 75px;
+    gap: 1px;
+}
+
+.calendar-day {
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-day.inactive {
+    color: #6c757d;
+    cursor: default;
+}
+
+.calendar-day.disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.calendar-day.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.calendar-day:hover:not(.disabled) {
+    background-color: #e9ecef;
+}
+
+.calendar-weekday {
+    background-color: #f8f9fa;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.horario-btn {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #3798FF;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.horario-btn:hover {
+    background-color: #ccc;
+}
+
+.gap-2 {
+    gap: 1rem !important;
+}
+
+.horarios{
+    padding: 250px 0;
+}
+
+html, body {
+    overflow: hidden;
+}

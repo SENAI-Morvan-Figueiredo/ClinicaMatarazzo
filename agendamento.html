@@ -5,13 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinica Matarazzo</title>
 
-    <!-- Nosso CSS (sempre em primeiro) -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Reset CSS (sempre em primeiro) -->
     <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Nosso CSS (sempre em primeiro) -->
+    <link rel="stylesheet" href="assets/css/agendamento.css">
 </head>
 <body>
-
+    <header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <span>Clinica Poggers</span>
+        </div>
+        <div class="search-bar">
+            <select name="especialidade" id="especialidade">
+                <option value="oftalmologia">Oftalmologia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="cardiologia">Cardiologia</option>
+            </select>
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        <div class="auth-buttons">
+            <button>Entrar</button>
+            <button>Cadastro</button>
+        </div>
+    </header>
+    <main class="d-flex justify-content-center align-items-center vh-100">
+        <div class="agendamento-container bg-light p-4 rounded shadow-lg">
+            <h2 class="text-center mb-4">Agendamento</h2>
+            <div class="row">
+                <!-- Calendário Estático -->
+                <div class="col-md-6 mb-4 text-center">
+                    <div class="container">
+                        <div class="calendar-container">
+                            <div class="calendar">
+                                <div class="calendar-header">
+                                    <button class="btn btn-secondary" disabled>&laquo; Mês Anterior</button>
+                                    <span id="monthYear" class="mx-3">Janeiro 2025</span>
+                                    <button class="btn btn-secondary" disabled>Próximo Mês &raquo;</button>
+                                </div>
+                                <div class="calendar-body">
+                                    <div class="calendar-weekday">Dom</div>
+                                    <div class="calendar-weekday">Seg</div>
+                                    <div class="calendar-weekday">Ter</div>
+                                    <div class="calendar-weekday">Qua</div>
+                                    <div class="calendar-weekday">Qui</div>
+                                    <div class="calendar-weekday">Sex</div>
+                                    <div class="calendar-weekday">Sáb</div>
+                                    <!-- Dias Inativos Antes do Início do Mês -->
+                                    <div class="calendar-day inactive"></div>
+                                    <div class="calendar-day inactive"></div>
+                                    <div class="calendar-day inactive"></div>
+                                    <div class="calendar-day">1</div>
+                                    <div class="calendar-day">2</div>
+                                    <div class="calendar-day">3</div>
+                                    <div class="calendar-day">4</div>
+                                    <div class="calendar-day">5</div>
+                                    <div class="calendar-day">6</div>
+                                    <div class="calendar-day">7</div>
+                                    <div class="calendar-day">8</div>
+                                    <div class="calendar-day">9</div>
+                                    <div class="calendar-day">10</div>
+                                    <div class="calendar-day">11</div>
+                                    <div class="calendar-day">12</div>
+                                    <div class="calendar-day">13</div>
+                                    <div class="calendar-day">14</div>
+                                    <div class="calendar-day">15</div>
+                                    <div class="calendar-day">16</div>
+                                    <div class="calendar-day">17</div>
+                                    <div class="calendar-day">18</div>
+                                    <div class="calendar-day">19</div>
+                                    <div class="calendar-day">20</div>
+                                    <div class="calendar-day">21</div>
+                                    <div class="calendar-day">22</div>
+                                    <div class="calendar-day">23</div>
+                                    <div class="calendar-day">24</div>
+                                    <div class="calendar-day">25</div>
+                                    <div class="calendar-day">26</div>
+                                    <div class="calendar-day">27</div>
+                                    <div class="calendar-day">28</div>
+                                    <div class="calendar-day">29</div>
+                                    <div class="calendar-day">30</div>
+                                    <div class="calendar-day">31</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Horários -->
+                <div class="col-md-6 horarios">
+                    <h4 class="text-center mb-3">Horários Disponíveis</h4>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <button class="horario-btn">4:00</button>
+                        <button class="horario-btn">5:00</button>
+                        <button class="horario-btn">6:00</button>
+                        <button class="horario-btn">7:00</button>
+                        <button class="horario-btn">8:00</button>
+                        <button class="horario-btn">9:00</button>
+                        <button class="horario-btn">10:00</button>
+                        <button class="horario-btn">11:00</button>
+                        <button class="horario-btn">14:00</button>
+                        <button class="horario-btn">15:00</button>
+                        <button class="horario-btn">16:00</button>
+                        <button class="horario-btn">17:00</button>
+                        <button class="horario-btn">18:00</button>
+                        <button class="horario-btn">19:00</button>
+                        <button class="horario-btn">20:00</button>
+                        <button class="horario-btn">21:00</button>
+                        <button class="horario-btn">22:00</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
