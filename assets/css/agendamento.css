@@ -17,6 +17,10 @@ header {
     padding: 10px 20px;
 }
 
+main{
+    margin: 30px 0 0 0;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -58,10 +62,6 @@ header {
     border: 1px solid #000;
     background-color: transparent;
     cursor: pointer;
-}
-
-main {
-    background-color: #f8f9fa;
 }
 
 .agendamento-container {
@@ -189,9 +189,9 @@ main {
 }
 
 .horarios{
-    padding: 250px 0;
+    padding-top: 200px;
 }
 
-html, body {
-    overflow: hidden;
+.align-items-center{
+    align-items: baseline!important;
 }
