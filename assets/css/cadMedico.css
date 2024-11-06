@@ -4,11 +4,10 @@
     flex-direction: row;
     justify-content: end;
 
-
 }
 
 .box {
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .nome {
@@ -22,14 +21,15 @@
 .caixa {
     margin-top: 10px;
     height: 60px;
-    width: 1500px;
+    width: 850px;
     background-color: blue;
     border-radius: 10px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-   
+    
 }
 
 .bola {
@@ -37,14 +37,31 @@
     width: 15px;
     clip-path: circle(50% at 50% 50%);
     background-color: rgb(237, 239, 241);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .velho {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    position: relative;
-    height: 100vh;
-    width: 700px;
-    background-image: url("/assets/img/Rectangle\ 50.png");
+    height: 600px;
+    width: 450px;
+    background-image: url("/assets/img/velho.png");
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
