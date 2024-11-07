@@ -18,6 +18,11 @@ header {
     align-items: center;
     background-color: #c4c4c4;
     padding: 10px 20px;
+    background-color: #202020;
+}
+
+span{
+    color: white;
 }
 
 .topo{
@@ -72,14 +77,25 @@ header {
     border: 1px solid transparent;
     background-color: transparent;
     cursor: pointer;
+    color: white;
+}
+
+.btnEntrar:hover{
+    color: #007bff;
 }
 
 .btnCadastrar {
     padding: 5px 10px;
     font-size: 16px;
-    border: 1px solid #000;
+    border: 1px solid white;
     background-color: transparent;
     cursor: pointer;
+    color: white;
+}
+
+.btnCadastrar:hover{
+    color: #007bff;
+    border: 1px solid #007bff;
 }
 
 main{
