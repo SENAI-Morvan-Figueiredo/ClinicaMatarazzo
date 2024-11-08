@@ -1,67 +1,152 @@
-.palmeiras {
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-
+body {
+    overflow-x: hidden;
+    font-family: "Afacad", sans-serif !important;
 }
 
-.box {
-    margin-right: 40px;
+/* Ajustando a largura da container para evitar overflow */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.nome {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+/* Corrigindo o comportamento da sidebar */
+.sidebar {
+    flex-shrink: 0;
+    max-width: 50%;
+    /* Ajustando o tamanho máximo da sidebar */
+    overflow: hidden;
 }
 
-.caixa {
-    margin-top: 10px;
-    height: 60px;
-    width: 850px;
-    background-color: blue;
+.sidebar img {
+    width: 100%;
+    /* Garantindo que a imagem ocupe toda a largura da sidebar */
+    height: 525px !important;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Barra de progresso personalizada */
+.progress-bar-custom {
+    background-color: #e9ecef;
     border-radius: 10px;
+    padding: 10px;
+}
 
+.progress-bar-custom span {
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    color: #6c757d;
+}
+
+.progress-bar-custom .active-step {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Estilos gerais */
+.form-section {
+    width: 50%;
+}
+
+/* Definindo box-sizing para evitar que margens/padding somem na largura */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    
+    background-color: #c4c4c4;
+    padding: 10px 20px;
+    background-color: #202020;
 }
 
-.bola {
-    height: 15px;
-    width: 15px;
-    clip-path: circle(50% at 50% 50%);
-    background-color: rgb(237, 239, 241);
+span {
+    color: white;
+}
 
+.topo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.velho {
+
+.topo img {
+    width: 40px;
+}
+
+.topo div:nth-child(1) a div {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 600px;
-    width: 450px;
-    background-image: url("/assets/img/velho.png");
+    align-items: center;
+    gap: 10px;
+}
 
-
+.topo div:nth-child(3) {
+    width: 100px;
+    height: 50px;
 }
 
 
 
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
 
+.logo img {
+    width: 50px;
+}
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.search-bar select,
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
 
+.btnEntrar {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
 
+.btnEntrar:hover {
+    color: #007bff;
+}
 
+.btnCadastrar {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
 
+.btnCadastrar:hover {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
 
-
+.ms-3 {
+    margin-left: 9rem !important;
+}
