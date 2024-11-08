@@ -1,0 +1,67 @@
+.palmeiras {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+.box {
+    margin-right: 40px;
+}
+
+.nome {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.caixa {
+    margin-top: 10px;
+    height: 60px;
+    width: 850px;
+    background-color: blue;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.bola {
+    height: 15px;
+    width: 15px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: rgb(237, 239, 241);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.velho {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 600px;
+    width: 450px;
+    background-image: url("/assets/img/velho.png");
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

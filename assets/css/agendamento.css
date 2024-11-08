@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad", sans-serif!important;
+    font-size: 20px;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c4c4c4;
+    padding: 10px 20px;
+    background-color: #202020;
+}
+
+span{
+    color: white;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.topo img{
+    width: 40px;
+}
+
+.topo div:nth-child(1) a div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topo div:nth-child(3){
+    width: 100px;
+    height: 50px;
+}
+
+
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar select, .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.btnEntrar {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.btnEntrar:hover{
+    color: #007bff;
+}
+
+.btnCadastrar {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.btnCadastrar:hover{
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+main{
+    margin-top: 1%;
+}
+
+h2{
+    font-size: 2em;
+}
+
+.agendamento-container {
+    width: 1200px;
+}
+
+.calendar-wrapper {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+#calendar {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.horario-btn {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.horario-btn:hover {
+    background-color: #ccc;
+}
+
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.calendar-header {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 45px;
+    gap: 1px;
+}
+
+.calendar-day {
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-day.inactive {
+    color: #6c757d;
+    cursor: default;
+}
+
+.calendar-day.disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.calendar-day.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.calendar-day:hover:not(.disabled) {
+    background-color: #e9ecef;
+}
+
+.calendar-weekday {
+    background-color: #f8f9fa;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.tamanhoHorario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horario-btn {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #3798FF;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.horario-btn:hover {
+    background-color: #ccc;
+}
+
+.gap-2 {
+    gap: 1rem !important;
+}
+
+.align-items-center{
+    align-items: baseline!important;
+}
+
+.vh-100 {
+    height: auto !important;
+}
+
+.btnAgendar{
+    margin-top: 30px;
+}
+
+.btnAgendar a{
+    padding: 10px;
+    color: white;
+    background-color: #202020;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Estilos do Popup */
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#popup:target {
+    display: flex;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20%;
+}
+
+.popup-content h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.popup-content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.popup-content a:hover {
+    background-color: #0056b3;
+}
