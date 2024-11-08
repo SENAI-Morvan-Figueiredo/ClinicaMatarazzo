@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad", sans-serif!important;
+    font-size: 20px;
+}
+
+body {
+    background-color: #f3f3f3;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    gap: 20px;
+}
+
+.perfil, .agendamento {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.perfil {
+    width: 40%;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.perfil h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.perfil p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.avaliacoes {
+    color: #27ae60;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.botao-consulta, .botao-mensagem {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botao-consulta {
+    background-color: #007bff;
+    color: white;
+}
+
+.botao-mensagem {
+    background-color: #ccc;
+    color: black;
+}
+
+.pacientes-fieis {
+    color: #333;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.agendamento {
+    width: 60%;
+}
+
+.agendamento h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.opcoes-consulta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.opcoes-consulta button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.opcoes-consulta .selecionado {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.form-agendamento {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-agendamento label {
+    font-size: 14px;
+    color: #333;
+}
+
+.form-agendamento select, .form-agendamento p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.horarios {
+    margin-top: 15px;
+}
+
+.horarios p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.horarios-disponiveis {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.horarios-disponiveis button {
+    background-color: #e7f3ff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.mais-horarios {
+    display: block;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar select, .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.btnEntrar {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.btnEntrar:hover{
+    color: #007bff;
+}
+
+.btnCadastrar {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.btnCadastrar:hover{
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c4c4c4;
+    padding: 10px 20px;
+    background-color: #202020;
+}
+
+span{
+    color: white;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.topo img{
+    width: 40px;
+}
+
+.topo div:nth-child(1) a div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.topo div:nth-child(3){
+    width: 100px;
+    height: 50px;
+}

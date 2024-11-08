@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Médico</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Reset CSS (sempre em primeiro) -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/medico.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <div><img src="assets/img/logo.svg" alt=""></div>
+                <span>Clinica Matarazzo</span>
+            </a>
+        </div>
+        <div class="search-bar">
+            <select name="especialidade" id="especialidade">
+                <option value="oftalmologia">Oftalmologia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="cardiologia">Cardiologia</option>
+            </select>
+            <input type="text" placeholder="Pesquisar                    🔎">
+        </div>
+        <div class="auth-buttons">
+            <a class="btnEntrar" href="login.html">Entrar</a>
+            <a class="btnCadastrar" href="cadastro.html">Cadastrar</a>
+        </div>
+    </header>
+
+    <div class="topo">
+        <div>
+            <a href="index.html">
+                <div>
+                    <img src="assets/img/btnVoltar.png" alt="">
+                    <p>Voltar</p>
+                </div>
+            </a>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <main>
+        <div class="container">
+            <!-- Perfil do Médico -->
+            <div class="perfil">
+                <img src="assets/img/olisinal.png" alt="Dr. Lucas Passarella Matsuhashi" class="foto-perfil">
+                <h1>Dr. Lucas Passarella Matsuhashi</h1>
+                <p>Oftalmologista</p>
+                <p>São Paulo <a href="#">4 endereços</a></p>
+                <p>CRM 155760 SP - RQE 68425</p>
+                <div class="avaliacoes">
+                    <span>★★★★★</span>
+                    <span>798 opiniões</span>
+                </div>
+                <button class="botao-consulta"><a style="color: white;" href="agendamento.html">Agendar consulta</a></button>
+                <button class="botao-mensagem">Enviar mensagem</button>
+                <p class="pacientes-fieis">Pacientes fiéis<br><small>Pacientes deste especialista retornam para outras
+                        consultas.</small></p>
+            </div>
+
+            <!-- Agendar Atendimento -->
+            <div class="agendamento">
+                <h2>Agendar atendimento</h2>
+                <!-- Opções de consulta (local ou teleconsulta) -->
+                <div class="opcoes-consulta">
+                    <button class="selecionado">Consulta no local</button>
+                    <button>Teleconsulta</button>
+                </div>
+
+                <!-- Formulário de Agendamento -->
+                <div class="form-agendamento">
+                    <!-- Endereço -->
+                    <label for="endereco">Endereço</label>
+                    <select id="endereco">
+                        <option>Av. Fagundes Filho 134, São Paulo</option>
+                    </select>
+
+                    <!-- Serviço -->
+                    <label>Serviços</label>
+                    <p>Consulta Oftalmologia</p>
+
+                    <!-- Primeira consulta -->
+                    <label>É o seu primeiro atendimento com este especialista?</label>
+                    <div class="radio-group">
+                        <input type="radio" name="primeira-consulta" id="sim" checked>
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="primeira-consulta" id="nao">
+                        <label for="nao">Não</label>
+                    </div>
+
+                    <!-- Horários disponíveis -->
+                    <div class="horarios">
+                        <p>Terça-feira, 12 de Novembro</p>
+                        <div class="horarios-disponiveis">
+                            <button>13:20</button>
+                            <button>13:40</button>
+                            <button>14:00</button>
+                            <button>14:20</button>
+                        </div>
+                        <a href="#" class="mais-horarios">Mostrar mais horários</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
