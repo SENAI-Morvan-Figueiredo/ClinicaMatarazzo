@@ -1,48 +1,259 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinica Matarazzo</title>
 
-      <!-- Reset CSS (sempre em primeiro) -->
-      <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Reset CSS (sempre em primeiro) -->
+    <link rel="stylesheet" href="assets/css/reset.css">
 
-      <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap 5 CSS -->
 
     <!-- Nosso CSS (sempre em primeiro) -->
     <link rel="stylesheet" href="assets/css/2style.css">
 
-  
+
 </head>
+
 <body>
-   <!--  <h1>Clinica Matarazzo</h1 -->
+    <!--  <h1>Clinica Matarazzo</h1 -->
     <header class="indexHeader">
         <nav class="menuzinho site">
-            <ul class="menu">
-                <li><a href="#">Exames</a></li>
-                <li><a href="#">Consultas</a></li>
-            </ul>
+            <div class="logo">
+                <a href="index.html">
+                    <div><img src="assets/img/logo.svg" alt=""></div>
+                    <span>Clinica Matarazzo</span>
+                </a>
+            </div>
             <div class="search">
                 <select>
                     <option value="especialidade">Especialidade</option>
                     <!-- Outras opções aqui -->
                 </select>
                 <input type="text" placeholder="Pesquisar">
-               
+
             </div>
             <ul class="auth">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Cadastrar</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
             <h1>Cuidando da Sua Visão com Excelência</h1>
-            <p>Na nossa clínica oftalmológica, sua saúde ocular é nossa prioridade. Com tecnologia avançada e uma equipe dedicada, oferecemos cuidados personalizados para garantir a melhor visão possível. Venha nos visitar!</p>
+            <p>Na nossa clínica oftalmológica, sua saúde ocular é nossa prioridade. Com tecnologia avançada e uma equipe
+                dedicada, oferecemos cuidados personalizados para garantir a melhor visão possível. Venha nos visitar!
+            </p>
         </div>
     </main>
+    <section class="especialidades">
+        <div class="container">
+            <h1>Nossas Especialidades</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/img/cornea.jpeg" alt="Imagem da córnea">
+                    <h1>CÓRNEA</h1>
+                    <p>O exame de córnea avalia a saúde e a estrutura da córnea, ajudando a diagnosticar e monitorar
+                        condições que afetam a visão, como ceratocone, infecções e distrofias, essenciais para o cuidado
+                        oftalmológico.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/catarata.jpg" alt="Imagem de catarata">
+                    <h1>CATARATA</h1>
+                    <p>A catarata é a opacificação do cristalino do olho que causa visão turva, tratada principalmente
+                        por cirurgia para restaurar a visão através da substituição do cristalino por uma lente
+                        artificial.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img/glaucoma.webp" alt="Imagem de glaucoma">
+                    <h1>GLAUCOMA</h1>
+                    <p>O glaucoma é uma doença ocular que aumenta a pressão intraocular, danificando o nervo óptico e
+                        podendo causar cegueira irreversível, sendo tratada com colírios, medicamentos, laser ou
+                        cirurgia para controlar a pressão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container bottomContainer">
+                <div class="allText bottomText">
+                    <p class="text-blk headingText">
+                        Sobre Nós
+                    </p>
+                    <p class="text-blk subHeadingText">
+                        Clínica Matarazzo
+                    </p>
+                    <p class="text-blk description">
+                        A Clínica Matarazzo é uma clínica oftalmológica dedicada ao cuidado da saúde ocular, oferecendo
+                        uma variedade de serviços para diagnóstico, prevenção e tratamento de doenças dos olhos. Com uma
+                        equipe especializada e tecnologia avançada, a clínica realiza exames de rotina, consultas
+                        oftalmológicas e procedimentos para diversas condições visuais, garantindo atendimento de
+                        qualidade e confiança.
+                    </p>
+                    <a>
+                        <button class="explore">
+                            Saiba Mais
+                        </button>
+                    </a>
+                </div>
+                <div class="videoContainer">
+                    <iframe allowfullscreen="allowfullscreen" class="mainVideo" controls="controls"
+                        src="https://www.youtube.com/embed/BsGLKSjGyzM?si=kl2w2Kpol08gTbLJ">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="profissionais">
+        <h2>Entre em contato com nossos profissionais</h2>
+        <div class="profissional-card">
+            <div class="profissional">
+                <div class="foto">
+                    <img src="assets/img/olisinal.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Dr. João Silva</h3>
+                    <p>Cardiologista</p>
+                    <p>Especialista em cardiologia com mais de 10 anos de experiência.</p>
+                </div>
+                <button>Enviar Mensagem</button>
+            </div>
+            <div class="profissional">
+                <div class="foto">
+                    <img src="assets/img/doutor.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Dra. Mario Oliveira</h3>
+                    <p>Dermatologista</p>
+                    <p>Atua no tratamento de doenças da pele com atendimento humanizado.</p>
+                </div>
+                <button>Enviar Mensagem</button>
+            </div>
+            <div class="profissional">
+                <div class="foto">
+                    <img src="assets/img/olisinal2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Dr. Carlos Mendes</h3>
+                    <p>Ortopedista</p>
+                    <p>Especialista em ortopedia e traumatologia com foco em reabilitação.</p>
+                </div>
+                <button>Enviar Mensagem</button>
+            </div>
+        </div>
+    </section>
+    <div class="pg-footer">
+        <footer class="footer">
+            <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
+                preserveAspectRatio="none">
+                <path class="footer-wave-path"
+                    d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+                </path>
+            </svg>
+            <div class="footer-content">
+                <div class="footer-content-column">
+                    <div class="footer-logo">
+                        <a class="footer-logo-link" href="#">
+                            <span class="hidden-link-text">LOGO</span>
+                            <img style="width: 120px; margin-top: -30px;" src="assets/img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name"> Comece Agora</h2>
+                        <ul id="menu-get-started" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="#">Início</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="#">Documentação</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                                <a href="#">Instalação</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name"> Empresa</h2>
+                        <ul id="menu-company" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#">Contato</a>
+                            </li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                                <a href="#">Notícias</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#">Carreiras</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name"> Legal</h2>
+                        <ul id="menu-legal" class="footer-menu-list">
+                            <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                                <a href="#">Aviso de Privacidade</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#">Termos de Uso</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-menu">
+                        <h2 class="footer-menu-name"> Links Rápidos</h2>
+                        <ul id="menu-quick-links" class="footer-menu-list">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a target="_blank" rel="noopener noreferrer" href="#">Central de Suporte</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                <a target="_blank" rel="noopener noreferrer" href="#">Status do Serviço</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#">Segurança</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                                <a href="#">Clientes</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <a href="#">Avaliações</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content-column">
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title"> Vamos Conversar</h2>
+                        <p class="footer-call-to-action-description"> Tem alguma dúvida de suporte?</p>
+                        <a class="footer-call-to-action-button button" href="#" target="_self"> Entre em Contato </a>
+                    </div>
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title"> Você nos liga</h2>
+                        <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                                href="tel:0124-64XXXX" target="_self"> 0124-64XXXX </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-wrapper">
+                    <p class="footer-copyright-text">
+                        <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Design feito por: Infinity. |
+                            Todos os direitos reservados. </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 </body>
+
 </html>

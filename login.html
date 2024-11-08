@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinica Matarazzo</title>
 
-    <!-- Nosso CSS (sempre em primeiro) -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- Reset CSS (sempre em primeiro) -->
     <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Nosso CSS (sempre em primeiro) -->
+    <link rel="stylesheet" href="assets/css/login.css">
+    
 </head>
 <body class="loginBody">
     <div class="container">
@@ -25,7 +26,7 @@
             <div class="boleta"></div>
             <div class="login-form">
                 <div class="user-icon">
-                    <img src="user-icon.png" alt="User Icon">
+                    <img src="assets/img/iconuser.png" alt="User Icon">
                 </div>
                 <form>
                     <label for="email">email:</label>
@@ -33,10 +34,12 @@
                     
                     <label for="senha">senha:</label>
                     <input type="password" id="senha" name="senha" required>
+
+                    <a style="border-radius: 20px; color: white; padding: 10px 20px; background-color: black;" href="index.html">Login</a>
                     
-                    <button type="button" class="google-login-btn">continue with Google</button>
+                    <div class="logingoogle"><button type="button" class="google-login-btn">continue with Google <img src="assets/img/google (1).png" alt="Icon"></button></div>
                     
-                    <a href="#" class="register-link">Cadastre-se</a>
+                    <a href="cadastro.html" class="register-link">Cadastre-se</a>
                     <div class="quarter-circle"></div>
                 </form>
             </div>

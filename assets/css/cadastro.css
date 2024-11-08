@@ -27,7 +27,7 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
-    height: 480px; /* mudar a altura*/
+    height: auto;
 }
 
 .form h2 {
@@ -35,28 +35,6 @@ body {
     font-size: 1.5em;
     text-align: left;
     font-weight: bold;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    font-size: 0.9em;
-    margin-bottom: 5px;
-}
-
-.form input, .form select {
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    background-color: #e0e0e0;
-}
-
-.input-group.small input {
-    width: 70px;
 }
 
 .circle {
@@ -80,6 +58,15 @@ body {
     top: 50%;
     right: 50px;
     transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle.small.right a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
 }
 
 .circle.large.bottom-right {
@@ -100,4 +87,10 @@ body {
     transform: rotate(45deg);
     z-index: 0;
     opacity: 0.4;
+}
+
+.finalizar a:nth-child(2){
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
 }
