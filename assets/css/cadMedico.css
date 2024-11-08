@@ -2,12 +2,8 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
 
-}
-
-.box {
-    margin-right: 40px;
 }
 
 .nome {
@@ -21,7 +17,7 @@
 .caixa {
     margin-top: 10px;
     height: 60px;
-    width: 850px;
+    width: 1300px;
     background-color: blue;
     border-radius: 10px;
 
@@ -43,16 +39,196 @@
     justify-content: space-around;
 }
 
-.velho {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 600px;
-    width: 450px;
-    background-image: url("/assets/img/velho.png");
-
-
+.form-container {
+    padding: 30px;
 }
+
+.row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.back-button, .next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: transparent;
+    color: #333;
+}
+
+.next-button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #3a78c2; }
+
+
+
+
+/* código do chat */
+/* styles.css */
+
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #4a90e2;
+}
+
+.progress-bar .step {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    flex: 1;
+}
+
+.progress-bar .circle {
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.back-button, .next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: transparent;
+    color: #333;
+}
+
+.next-button {
+    background-color: #4a90e2;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #3a78c2;
+}
+*/
+
+
 
 
 
