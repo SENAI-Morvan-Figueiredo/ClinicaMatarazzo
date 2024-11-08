@@ -784,7 +784,7 @@ button:hover {
 }
 
 .footer {
-    background-color: #004658;
+    background-color: #007BFF;
     color: #fff;
 }
 
@@ -869,7 +869,7 @@ button:hover {
 }
 
 .footer-call-to-action-button {
-    background-color: #027b9a;
+    background-color: #0000FF;
     border-radius: 21px;
     color: #fffff2;
     display: inline-block;
@@ -984,7 +984,7 @@ button:hover {
 }
 
 .footer-copyright {
-    background-color: #027b9a;
+    background-color: #0000FF;
     color: #fff;
     padding: 15px 30px;
     text-align: center;
